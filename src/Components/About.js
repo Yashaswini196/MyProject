@@ -1,6 +1,7 @@
 import React ,{useState} from 'react'
 
 export default function About() {
+   // eslint-disable-next-line no-unused-vars
    const[mystyle, setMystyle] = useState({
         color:'black',
         backgroundColor: 'white'

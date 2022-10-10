@@ -1,17 +1,16 @@
 /* eslint-disable no-const-assign */
 
 import './App.css';
-import About from './Components/About';
+//import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextFrom';
 import React ,{useState} from 'react';
 import Alert from './Components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+//import {
+  //BrowserRouter as Router,
+  //Switch,
+  //Route
+//} from "react-router-dom";
 
 
 
@@ -42,20 +41,20 @@ function App() {
   
   return (
     <>
-    <Router>
-  <Navbar title="MY PROJECT" aboutText="About " mode={mode} toggleMode={toggleMode}/>
+    {/*<Router>*/}
+  <Navbar title="MY PROJECT"  mode={mode} toggleMode={toggleMode}/>
   <Alert alert ={alert}/>
   < div className = "container my-3">
-  <Switch>    
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
-          <TextForm  showAlert={showAlert} heading = "Enter the text to analyze " mode={mode}/>
-          </Route>
-          </Switch>
+  {/*<switch>  */}
+          {/*<Route exact path="/about">*/}
+           {/*<About />*/}
+          {/*</Route>*/}
+         {/* <Route exact path="/">*/}
+          <TextForm  showAlert={showAlert} heading = "Enter the text to analyze " mode={mode}></TextForm>
+          {/*</Route>*/}
+          {/*</Switch>*/}
    </div>
-   </Router>
+   {/*</Router>*/}
   </>
   );
 }
